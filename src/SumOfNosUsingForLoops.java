@@ -9,6 +9,8 @@ public class SumOfNosUsingForLoops {
                 count++;
             }
         }
+
+
         System.out.println("Sum is " + sum);
         System.out.println("Count of it divided by 3 is " + count);
     }
