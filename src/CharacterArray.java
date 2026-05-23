@@ -17,7 +17,7 @@ public class CharacterArray {
         int charLength = charArray.length;
 
         for (int i = 0; i < charLength; i += 2) {
-            System.out.print(charArray[i]+" ");
+            System.out.print(charArray[i] + " ");
         }
 
         System.out.println();
@@ -26,9 +26,16 @@ public class CharacterArray {
         char[] anotherCharArray = {'t', 'u', 'v', 'w', 'x', 'y', 'z'};
         int anotherCharLength = anotherCharArray.length;
         for (int i = 0; i < anotherCharLength; i += 2) {
-            System.out.print(anotherCharArray[i]+" ");
+            System.out.print(anotherCharArray[i] + " ");
         }
 
+        System.out.println();
+
+        for (int i = anotherCharLength - 1; i >= 0; i--) {
+            System.out.print(anotherCharArray[i] + " ");
+        }
+
+        System.out.println();
 
     }
 }
