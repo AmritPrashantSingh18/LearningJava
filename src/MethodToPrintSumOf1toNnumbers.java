@@ -8,6 +8,14 @@ public class MethodToPrintSumOf1toNnumbers {
         return sum;
     }
 
+    public static int sumOf1toNnumbers2(int n) {
+        int sum = 0;
+        for (int i = 1; i <= n; i++) {
+            sum = (n * (n + 1)) / 2;
+        }
+        return sum;
+    }
+
     int sumOf1toNnumbers1(int n) {
         int sum = 0;
         for (int i = 1; i <= n; i++) {
@@ -21,5 +29,7 @@ public class MethodToPrintSumOf1toNnumbers {
         MethodToPrintSumOf1toNnumbers m = new MethodToPrintSumOf1toNnumbers();
         int a = m.sumOf1toNnumbers1(200);
         System.out.println(a);
+        System.out.println(sumOf1toNnumbers2(100));
+
     }
 }
