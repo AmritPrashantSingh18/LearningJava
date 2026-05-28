@@ -24,12 +24,22 @@ public class MethodToPrintSumOf1toNnumbers {
         return sum;
     }
 
+    int sumOfEvenNumbers(int x) {
+        int sum = 0;
+        for (int i = 2; i <= x; i += 2) {
+            sum += i;
+        }
+        return sum;
+    }
+
     public static void main(String[] args) {
         System.out.println(sumOf1toNnumbers(100));
         MethodToPrintSumOf1toNnumbers m = new MethodToPrintSumOf1toNnumbers();
         int a = m.sumOf1toNnumbers1(200);
         System.out.println(a);
         System.out.println(sumOf1toNnumbers2(100));
+        int b = m.sumOfEvenNumbers(20);
+        System.out.println(b);
 
     }
 }
