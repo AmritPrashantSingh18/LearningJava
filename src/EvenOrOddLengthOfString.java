@@ -2,6 +2,7 @@ public class EvenOrOddLengthOfString {
 
     void evenOrOddLengthString(String n){
         int length=n.length();
+        System.out.println(length);
         if(length%2==0){
             System.out.println("Even");
         }else{
