@@ -10,6 +10,8 @@ public class CovertLowerCaseToUpperCaseAndViceVersa {
         System.out.println(toUpperCase('g'));
         System.out.println(toLowerCase('Y'));
 
+        System.out.println((char)('c' -32));
+
     }
 
     public static char toUpperCase(char ch) {

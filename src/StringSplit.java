@@ -26,6 +26,7 @@ public class StringSplit {
         System.out.println();
     }
 
+
     public static void main(String[] args) {
         StringSplit sp = new StringSplit();
         sp.stringSplit("AABBCCddEeFFGg");
