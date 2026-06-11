@@ -36,6 +36,28 @@ public class SmallestNumber {
         }
     }
 
+    public static int addNums(int num) {
+        int a = 1;
+        int sum = 0;
+        while (a <= num) {
+            sum += a;
+            a++;
+        }
+        return sum;
+    }
+
+    public static boolean primeNumber(int num) {
+        if (num <= 1) {
+            return false;
+        }
+        for (int i = 2; i < num; i++) {
+            if (num % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
     public static void main(String[] args) {
         System.out.println(smallestInteger(3, 1, 2));
         System.out.println(gradeMarks(80));
@@ -46,8 +68,12 @@ public class SmallestNumber {
         System.out.println(gradeMarks(24));
         System.out.println(gradeMarks(0));
         System.out.println(gradeMarks(-1));
-        System.out.println(compareNumber(10,10,20));
-        System.out.println(compareNumber(10,20,20));
-        System.out.println(compareNumber(10,30,20));
+        System.out.println(compareNumber(10, 10, 20));
+        System.out.println(compareNumber(10, 20, 20));
+        System.out.println(compareNumber(10, 30, 20));
+        System.out.println(addNums(10));
+        System.out.println(primeNumber(9));
+        System.out.println(primeNumber(4));
+
     }
 }
