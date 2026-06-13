@@ -80,6 +80,17 @@ public class ArraysTesting {
     }
 
 
+    public static Integer matrixCenter(int[][] matrix) {
+        if (matrix == null || matrix.length == 0 || matrix.length % 2 == 0 || matrix[0].length % 2 == 0) {
+            return null;
+        }
+        int row = matrix.length;
+        int column = matrix[0].length;
+
+        return matrix[row / 2][column / 2];
+    }
+
+
     public static void main(String[] args) {
         System.out.println(smallestIntegerInArray(new int[]{90, 56, 40, 20, 10, 11}));
         int[] a = {60, 89, 97, 100, 40, 3, 50, 78};
@@ -95,6 +106,7 @@ public class ArraysTesting {
 
         System.out.println(Arrays.toString(reverseStringArray(new String[]{"Amrit", "Prashant", "Singh"})));
         System.out.println(totalStudents(new int[][]{{25, 45}, {30, 45}}));
+        System.out.println((matrixCenter(new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}})));
 
     }
 }
