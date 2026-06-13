@@ -50,6 +50,15 @@ public class ArraysTesting {
         System.out.println();
     }
 
+    public static String[] reverseStringArray(String[] a){
+        String[] b = new String[a.length];
+        for(int i=0;i<a.length;i++){
+            String word = a[i];
+            b[b.length-1-i]=word;
+        }
+        return b;
+    }
+
     public static void main(String[] args) {
         System.out.println(smallestIntegerInArray(new int[]{90, 56, 40, 20, 10, 11}));
         int[] a = {60, 89, 97, 100, 40, 3, 50, 78};
@@ -62,6 +71,8 @@ public class ArraysTesting {
 
         System.out.println(searchTarget(5, b, 8));
         System.out.println(searchTarget(5, c, 10));
+
+        System.out.println(Arrays.toString(reverseStringArray(new String[]{"Amrit", "Prashant", "Singh"})));
 
 
     }
