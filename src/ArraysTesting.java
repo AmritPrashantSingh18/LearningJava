@@ -50,14 +50,35 @@ public class ArraysTesting {
         System.out.println();
     }
 
-    public static String[] reverseStringArray(String[] a){
+    public static String[] reverseStringArray(String[] a) {
         String[] b = new String[a.length];
-        for(int i=0;i<a.length;i++){
+        for (int i = 0; i < a.length; i++) {
             String word = a[i];
-            b[b.length-1-i]=word;
+            b[b.length - 1 - i] = word;
         }
         return b;
     }
+
+    public static String checkBloodDonationEligiblity(int age, int weight) {
+        if (age < 18) {
+            return "UnderAge";
+        } else if (age >= 18 && weight <= 50) {
+            return "NonEligible";
+        } else {
+            return "Eligible";
+        }
+    }
+
+    public static int totalStudents(int[][] students) {
+        int sum = 0;
+        for (int i = 0; i < students.length; i++) {
+            for (int j = 0; j < students[0].length; j++) {
+                sum = sum + students[i][j];
+            }
+        }
+        return sum;
+    }
+
 
     public static void main(String[] args) {
         System.out.println(smallestIntegerInArray(new int[]{90, 56, 40, 20, 10, 11}));
@@ -73,7 +94,7 @@ public class ArraysTesting {
         System.out.println(searchTarget(5, c, 10));
 
         System.out.println(Arrays.toString(reverseStringArray(new String[]{"Amrit", "Prashant", "Singh"})));
-
+        System.out.println(totalStudents(new int[][]{{25, 45}, {30, 45}}));
 
     }
 }
