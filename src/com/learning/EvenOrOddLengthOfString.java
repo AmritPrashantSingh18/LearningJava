@@ -1,3 +1,5 @@
+package com.learning;
+
 public class EvenOrOddLengthOfString {
 
     void evenOrOddLengthString(String n) {

@@ -1,3 +1,5 @@
+package com.learning;
+
 public class StringSplit {
 
     void stringSplit(String n) {
@@ -26,11 +28,22 @@ public class StringSplit {
         System.out.println();
     }
 
+    public static String braveAndMice(String animal) {
+        String animals = animal.toLowerCase();
+        if (animals.equals("mouse")) {
+            return "Hide";
+        } else {
+            return "Walk";
+        }
+    }
+
 
     public static void main(String[] args) {
         StringSplit sp = new StringSplit();
         sp.stringSplit("AABBCCddEeFFGg");
         sp.stringSplit1("hsgsshsgsgaggshsa");
         sp.reverseString("Amrit");
+        System.out.println(braveAndMice("Mouse"));
+        System.out.println(braveAndMice("dog"));
     }
 }

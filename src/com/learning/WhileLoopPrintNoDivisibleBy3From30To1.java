@@ -1,3 +1,5 @@
+package com.learning;
+
 public class WhileLoopPrintNoDivisibleBy3From30To1 {
 
     public static void main(String[] args) {

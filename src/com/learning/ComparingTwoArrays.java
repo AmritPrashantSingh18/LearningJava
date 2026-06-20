@@ -1,3 +1,5 @@
+package com.learning;
+
 public class ComparingTwoArrays {
 
     public static void main(String[] args) {

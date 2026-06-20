@@ -1,3 +1,5 @@
+package com.learning;
+
 public class UpperCaseLettersInString {
 
     void upperCaseInString(String a) {

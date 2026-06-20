@@ -1,3 +1,5 @@
+package com.learning;
+
 public class SumOfNosUsingForLoops {
 
     public static void main(String[] args) {

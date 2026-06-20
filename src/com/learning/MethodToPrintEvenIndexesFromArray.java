@@ -1,3 +1,5 @@
+package com.learning;
+
 public class MethodToPrintEvenIndexesFromArray {
 
     void indexArray(int[] x) {

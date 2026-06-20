@@ -1,3 +1,5 @@
+package com.learning;
+
 public class PracticeQuestions {
 
     String printData(String data) {
