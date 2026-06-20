@@ -1,3 +1,5 @@
+package com.learning;
+
 public class SmallestNumber {
 
     public static int smallestInteger(int a, int b, int c) {

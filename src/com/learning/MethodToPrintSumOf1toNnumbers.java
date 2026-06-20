@@ -1,3 +1,5 @@
+package com.learning;
+
 public class MethodToPrintSumOf1toNnumbers {
 
     public static int sumOf1toNnumbers(int n) {

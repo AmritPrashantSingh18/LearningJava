@@ -1,3 +1,5 @@
+package com.learning;
+
 import java.util.Arrays;
 
 public class ArraysTesting {
